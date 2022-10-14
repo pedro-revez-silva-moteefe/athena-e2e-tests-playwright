@@ -1,0 +1,23 @@
+{
+  "name": "athena-e2e-tests-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:all": "npx playwright test",
+    "test:debug": "npx playwright test  --project=chromium --debug"
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.26.1",
+    "chance": "^1.1.8"
+  },
+  "dependencies": {
+    "@types/chance": "^1.1.3"
+  }
+}
