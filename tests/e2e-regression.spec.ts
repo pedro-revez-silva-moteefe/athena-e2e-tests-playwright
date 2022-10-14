@@ -77,7 +77,7 @@ test.describe("E2E Regression Tests for Athena", () => {
     await page1.locator('[placeholder="Your post code"]').fill('WL8 GH8');
 
     await page1.locator('text=Proceed to payment').first().click();
-
+    // Fails from here because the iframe's name is different everytime
     await page1.frameLocator('iframe[name="__privateStripeFrame7736"]').locator('[placeholder="Card number"]').click();
 
     await page1.frameLocator('iframe[name="__privateStripeFrame7736"]').locator('[placeholder="Card number"]').fill('4141 4141 4141 41411');
